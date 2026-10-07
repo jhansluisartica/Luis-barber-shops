@@ -1,0 +1,13 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LUIS BARBER SHOP | Reservar</title><link rel="stylesheet" href="css/estilos.css"></head><body><header class="header"><div class="container nav">
+      <a class="brand" href="index.html"><img src="img/logo-luis.png" alt="Logo LUIS BARBER SHOP"><b>LUIS<span>BARBER SHOP</span></b></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <nav class="menu" id="menu">
+        <a class="" href="index.html">Inicio</a>
+        <a class="" href="cortes.html">Cortes</a>
+        <a class="" href="galeria.html">Galería</a>
+        <a class="active" href="reservar.html">Reservar</a>
+        <a class="" href="pagos.html">Pagos</a>
+        <a class="" href="contacto.html">Contacto</a>
+      </nav>
+      <a class="phone" href="tel:929631086">929 631 086</a>
+    </div></header><main class="reserve-page"><div class="container reserve-grid"><div class="reserve-copy"><div class="tag">LUIS BARBER SHOP</div><h1>Reserva<br><span>tu cita.</span></h1><p>Agenda tu corte de forma rápida. Atendemos de lunes a sábado de 10:00 a.m. a 8:00 p.m.</p><div class="location"><strong>Dirección:</strong> Jirón Huaral s/n Barrio Palmeras, San Agustín de Huaychao - Huayllay - Pasco</div></div><form id="bookingForm" class="form"><label>Nombre completo<input name="nombre" required placeholder="Ingresa tu nombre"></label><label>Teléfono<input name="telefono" required pattern="[0-9 ]{9,12}" placeholder="929631086"></label><div class="row"><label>Fecha<input id="fecha" name="fecha" type="date" required></label><label>Hora<input name="hora" type="time" required min="10:00" max="20:00"></label></div><label>Servicio<select id="servicio" name="servicio" required><option value="">Selecciona un corte</option></select></label><label>Método de pago<select name="metodo" required><option value="">Selecciona un método</option><option>Yape</option><option>Transferencia bancaria</option><option>Pago presencial</option></select></label><button class="btn gold full" type="submit">RESERVAR CITA</button><p id="message" class="message"></p></form></div></main><footer class="footer"><div class="container footer-flex"><div><strong>LUIS BARBER SHOP</strong><br>Estilo que te representa.</div><div><span class="gold">Lunes a Sábado · 10:00 a.m. - 8:00 p.m.</span><br>© <span id="year"></span> LUIS BARBER SHOP</div></div></footer><script src="js/script.js"></script></body></html>

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root{--bg:#070707;--panel:#111;--panel2:#171717;--gold:#d7ad4d;--gold2:#f5d477;--text:#f6f6f6;--muted:#aaa;--line:#2b2b2b}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Montserrat,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}.header{position:sticky;top:0;z-index:100;background:rgba(5,5,5,.95);backdrop-filter:blur(12px);border-bottom:1px solid #292929}.nav{min-height:78px;display:flex;align-items:center;gap:22px}.brand{display:flex;align-items:center;gap:10px;margin-right:auto}.brand img{width:58px;height:58px;object-fit:contain}.brand b{font-size:1rem;letter-spacing:1px}.brand span{display:block;color:var(--gold);font-size:.65rem;letter-spacing:2px}.menu{display:flex;gap:22px;align-items:center}.menu a{font-size:.8rem;font-weight:700;color:#ddd;padding:28px 0;border-bottom:2px solid transparent}.menu a:hover,.menu a.active{color:var(--gold);border-color:var(--gold)}.phone{border:1px solid var(--gold);padding:9px 14px;border-radius:8px;color:var(--gold);font-weight:800;font-size:.78rem}.menu-btn{display:none;background:none;border:0;color:white;font-size:1.7rem}
+.hero{min-height:calc(100vh - 78px);display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.45)),url('../img/huaychao.jpg') center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,var(--bg))}.hero-content{position:relative;z-index:2;max-width:780px;padding:90px 0}.logo-big{width:min(330px,65vw);margin-bottom:18px;filter:drop-shadow(0 10px 30px #000)}.tag{color:var(--gold);letter-spacing:3px;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(2.7rem,7vw,6rem);line-height:.98;margin:12px 0 20px}.hero h1 span{color:var(--gold)}.hero p{color:#ddd;max-width:700px}.location{margin-top:20px;color:#fff;font-size:.9rem}.location strong{color:var(--gold)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:8px;border:1px solid var(--gold);font-weight:800;cursor:pointer;transition:.25s}.btn.gold{background:var(--gold);color:#111}.btn.gold:hover{background:var(--gold2);transform:translateY(-2px)}.btn.outline{color:white}.btn.outline:hover{background:white;color:#111}.section{padding:90px 0}.section-dark{background:#0d0d0d}.section-title{text-align:center;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:8px 0 12px}.section-sub{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 38px}.two{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.card{background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid var(--line);border-radius:16px;padding:28px}.info-list{display:grid;gap:14px;margin-top:25px}.info-list div{padding:15px;border-left:3px solid var(--gold);background:#111}.info-list small{color:#888;display:block}.info-list b{font-size:.95rem}.image-card{width:100%;border-radius:16px;border:1px solid #333;display:block;box-shadow:0 20px 50px #000}
+.page-hero{padding:70px 0;background:linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.35)),url('../img/huaychao.jpg') center/cover;border-bottom:1px solid #292929}.page-hero h1{font-size:clamp(2.3rem,5vw,4rem);color:var(--gold)}.page-hero p{color:#ddd}
+.cut-image{max-width:100%;width:100%;border-radius:14px;border:1px solid #333;display:block}.cut-note{margin-top:18px;color:#aaa;font-size:.9rem}
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.price-card{background:#111;border:1px solid #292929;border-radius:13px;padding:22px}.price-card h3{font-size:1rem}.price-card p{color:#999;font-size:.82rem;min-height:45px}.price{color:var(--gold);font-weight:800;font-size:1.1rem;margin-top:10px;display:block}
+.gallery-main{max-width:1100px;margin:30px auto 0}.gallery-main img{width:100%;display:block;border-radius:16px;border:1px solid #333}.gallery-note{text-align:center;color:#aaa;margin-top:18px}
+.reserve-page{min-height:calc(100vh - 78px);background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.62) 52%,rgba(0,0,0,.2)),url('../img/reserva.jpg') center/cover;padding:75px 0}.reserve-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.reserve-copy h1{font-size:clamp(2.5rem,5vw,4.6rem);line-height:.98}.reserve-copy h1 span{color:var(--gold)}.reserve-copy p{color:#ddd;margin-top:18px;max-width:600px}.form{background:rgba(13,13,13,.93);border:1px solid #3a3a3a;border-radius:16px;padding:28px;box-shadow:0 25px 70px #000}.form label{display:block;color:#ccc;font-size:.76rem;font-weight:700;margin-bottom:14px}.form input,.form select{width:100%;margin-top:6px;padding:12px;background:#090909;border:1px solid #333;border-radius:7px;color:#fff;font-family:inherit}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form .full{width:100%}.message{text-align:center;min-height:22px;margin-top:12px;color:var(--gold);font-size:.8rem}
+.payment-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:stretch}.payment{background:#f4f4f4;color:#111;border-radius:16px;padding:28px;text-align:center}.payment.yape{background:#7200a8;color:white}.payment p{color:#555}.payment.yape p{color:#f0e2f6}.payment img{width:min(300px,90%);height:300px;object-fit:cover;background:white;border-radius:12px;margin:18px auto;display:block}.cci{background:#111;color:var(--gold);font-weight:800;padding:18px;border-radius:8px;margin:25px 0;word-break:break-all}.hours{font-size:1.15rem;font-weight:800;color:var(--gold);margin-top:12px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:stretch}.contact-card{background:#111;border:1px solid #2c2c2c;border-radius:16px;padding:30px}.contact-card p{padding:15px 0;border-bottom:1px solid #292929}.contact-card p:last-child{border:0}.contact-card small{display:block;color:#777;text-transform:uppercase;letter-spacing:1px}.map{border:0;width:100%;min-height:470px;border-radius:16px;display:block}.map-wrap{overflow:hidden;border-radius:16px;border:1px solid #333}.map-link{display:inline-block;margin-top:18px;color:var(--gold);font-weight:800}
+.footer{padding:28px 0;border-top:1px solid #262626;background:#050505}.footer-flex{display:flex;justify-content:space-between;gap:20px;color:#888;font-size:.78rem}.footer strong{color:white}.footer .gold{color:var(--gold)}
+@media(max-width:950px){.menu{display:none;position:absolute;top:78px;left:0;right:0;background:#080808;flex-direction:column;padding:18px 5%;border-bottom:1px solid #292929;align-items:stretch}.menu.show{display:flex}.menu a{padding:10px 0}.phone{display:none}.menu-btn{display:block}.reserve-grid,.two,.contact-grid{grid-template-columns:1fr}.prices{grid-template-columns:repeat(2,1fr)}.payment-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.nav{min-height:70px}.brand img{width:50px;height:50px}.section{padding:65px 0}.prices{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{min-height:calc(100vh - 70px)}.hero-content{padding:65px 0}.gallery-main img{min-height:250px;object-fit:cover}.map{min-height:360px}}
+
+/* =========================================================
+   FONDO ÚNICO A PANTALLA COMPLETA
+   Cortes · Galería · Pagos · Contacto
+   ========================================================= */
+body.inner-page{
+  position:relative;
+  min-height:100vh;
+  background:#080808;
+}
+body.inner-page::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.48),rgba(0,0,0,.70)),
+    url('../img/huaychao.jpg') center center / cover no-repeat;
+}
+body.inner-page::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.35));
+  pointer-events:none;
+}
+.inner-page .page-hero{
+  background:transparent;
+  border-bottom:0;
+  padding:65px 0 35px;
+}
+.inner-page .section,
+.inner-page .section-dark{
+  background:transparent;
+}
+.inner-page .footer{
+  background:rgba(4,4,4,.90);
+  backdrop-filter:blur(5px);
+}
+.inner-page .prices{
+  margin-top:10px;
+}
+.inner-page .cut-image{
+  display:none;
+}
+.inner-page .gallery-main{
+  margin-top:10px;
+}
+.inner-page .gallery-main img{
+  background:rgba(0,0,0,.25);
+}
+.inner-page .payment-grid,
+.inner-page .contact-grid{
+  margin-top:5px;
+}
+.inner-page .payment,
+.inner-page .contact-card,
+.inner-page .map-wrap,
+.inner-page .price-card{
+  box-shadow:0 18px 55px rgba(0,0,0,.45);
+}
+@media(max-width:700px){
+  body.inner-page::before{
+    background-position:center center;
+  }
+}
+
+/* =========================================================
+   INICIO - DISEÑO SEGÚN LA REFERENCIA FINAL
+   Solo afecta index.html
+   ========================================================= */
+body.home-reference{
+  background:#050505;
+  overflow-x:hidden;
+}
+.home-reference .header{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  z-index:20;
+  background:rgba(0,0,0,.88);
+  border-bottom:1px solid rgba(230,180,55,.08);
+}
+.home-reference .home-page{
+  min-height:100vh;
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+.home-reference .home-background{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  filter:saturate(1.10) contrast(1.05);
+}
+.home-reference .home-shade{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,
+      rgba(0,0,0,.92) 0%,
+      rgba(0,0,0,.72) 23%,
+      rgba(0,0,0,.34) 45%,
+      rgba(0,0,0,.05) 72%,
+      rgba(0,0,0,.08) 100%),
+    linear-gradient(0deg,rgba(0,0,0,.76),transparent 45%);
+}
+.home-reference .home-bottom-shade{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:250px;
+  background:linear-gradient(transparent,rgba(0,0,0,.94));
+}
+.home-reference .home-content{
+  position:relative;
+  z-index:3;
+  width:min(1540px,94%);
+  height:100%;
+  min-height:100vh;
+  margin:auto;
+  padding-top:110px;
+  display:flex;
+  align-items:flex-start;
+}
+.home-reference .home-copy{
+  width:650px;
+  max-width:52%;
+  margin-left:0;
+  padding-top:10px;
+}
+.home-reference .home-logo{
+  width:350px;
+  max-width:100%;
+  display:block;
+  margin:0 0 8px 65px;
+  filter:drop-shadow(0 8px 15px rgba(0,0,0,.85));
+}
+.home-reference .home-kicker{
+  margin-left:0;
+  color:#fff;
+  font-size:16px;
+  font-weight:800;
+  letter-spacing:1.2px;
+}
+.home-reference .home-kicker:before{
+  color:#f5bc35;
+}
+.home-reference .home-title{
+  margin:5px 0 12px;
+  font-size:clamp(58px,5.3vw,88px);
+  line-height:.86;
+  font-weight:950;
+  letter-spacing:-2px;
+  text-transform:uppercase;
+}
+.home-reference .home-title span{
+  color:#f2bb39;
+}
+.home-reference .home-title:after{
+  width:120px;
+  height:5px;
+  margin:8px 0 0 265px;
+  background:#f2bb39;
+}
+.home-reference .home-tagline{
+  margin:0;
+  max-width:560px;
+  font-size:17px;
+  line-height:1.4;
+  color:#f2f2f2;
+}
+.home-reference .home-actions{
+  margin-top:22px;
+}
+.home-reference .home-actions .btn{
+  width:315px;
+  min-height:58px;
+  border-radius:15px;
+  font-size:15px;
+  font-weight:900;
+  box-shadow:0 8px 30px rgba(242,187,57,.28);
+}
+.home-reference .home-features{
+  margin-top:27px;
+  display:flex;
+  width:980px;
+  max-width:95vw;
+  gap:0;
+}
+.home-reference .home-feature{
+  flex:1;
+  min-width:0;
+  padding:0 27px;
+  text-align:center;
+  border-right:1px solid rgba(240,190,60,.65);
+}
+.home-reference .home-feature:first-child{padding-left:0}
+.home-reference .home-feature:last-child{border-right:0}
+.home-reference .home-feature .feature-icon{
+  width:58px;
+  height:58px;
+  margin:auto;
+  border:3px solid #f2bb39;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#f2bb39;
+  font-size:28px;
+  background:rgba(0,0,0,.2);
+}
+.home-reference .home-feature h3{
+  margin:9px 0 3px;
+  color:#fff;
+  font-size:13px;
+  font-weight:900;
+}
+.home-reference .home-feature p{
+  margin:0;
+  color:#ddd;
+  font-size:12px;
+}
+.home-reference .footer{
+  display:none;
+}
+@media(max-width:1000px){
+  .home-reference .home-logo{margin-left:0;width:290px}
+  .home-reference .home-copy{max-width:65%}
+  .home-reference .home-features{width:760px}
+}
+@media(max-width:700px){
+  .home-reference .home-page{height:auto;min-height:900px}
+  .home-reference .home-content{min-height:900px;padding-top:95px}
+  .home-reference .home-copy{max-width:100%;width:100%}
+  .home-reference .home-logo{width:230px}
+  .home-reference .home-title{font-size:48px}
+  .home-reference .home-kicker{font-size:11px}
+  .home-reference .home-tagline{font-size:13px}
+  .home-reference .home-actions .btn{width:260px}
+  .home-reference .home-features{width:100%;flex-wrap:wrap}
+  .home-reference .home-feature{flex:1 1 30%;padding:10px}
+  .home-reference .home-background{object-position:62% center}
+}
+
+/* INICIO ORDENADO - AJUSTE FINAL */
+body.home-reference .home-content{width:min(1600px,92%);padding-top:108px;padding-bottom:34px;align-items:flex-start}
+body.home-reference .home-copy{width:690px;max-width:54%;padding-top:0}
+body.home-reference .home-logo{width:330px;margin:0 0 8px 55px}
+body.home-reference .home-kicker{margin:0 0 4px;font-size:15px;line-height:1.2}
+body.home-reference .home-title{margin:2px 0 12px;font-size:clamp(58px,5.15vw,86px);line-height:.83}
+body.home-reference .home-title:after{margin-top:9px;margin-left:265px}
+body.home-reference .home-tagline{margin:0;font-size:16px;line-height:1.35}
+body.home-reference .home-actions{margin-top:20px}
+body.home-reference .home-actions .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:315px;height:57px;padding:0 20px}
+body.home-reference .home-features{margin-top:27px;width:min(1030px,94vw);display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:start}
+body.home-reference .home-feature{min-height:96px;padding:0 22px;border-right:1px solid rgba(242,187,57,.65);display:flex;flex-direction:column;align-items:center}
+body.home-reference .home-feature:first-child{padding-left:0}
+body.home-reference .home-feature:last-child{border-right:0}
+body.home-reference .home-feature .feature-icon{width:58px;height:58px;flex:0 0 58px}
+body.home-reference .home-feature h3{margin:9px 0 2px;font-size:12px;white-space:nowrap}
+body.home-reference .home-feature p{font-size:11px;white-space:nowrap}
+body.home-reference .home-background{object-position:center center}
+@media(max-width:1050px){body.home-reference .home-copy{max-width:65%}body.home-reference .home-features{grid-template-columns:repeat(5,minmax(110px,1fr));width:850px}}
+@media(max-width:760px){body.home-reference .home-content{width:90%;padding-top:92px}body.home-reference .home-copy{width:100%;max-width:100%}body.home-reference .home-logo{width:230px;margin-left:0}body.home-reference .home-title{font-size:48px}body.home-reference .home-title:after{margin-left:145px;width:85px}body.home-reference .home-tagline{font-size:13px}body.home-reference .home-features{width:100%;grid-template-columns:repeat(3,1fr);row-gap:14px}body.home-reference .home-feature{padding:0 8px}body.home-reference .home-feature h3,body.home-reference .home-feature p{white-space:normal;text-align:center}}
+
+/* INICIO FINAL CORREGIDO */
+body.home-reference .header{position:absolute;top:0;left:0;right:0;z-index:20;background:rgba(0,0,0,.88)}
+body.home-reference .home-page{min-height:100vh;height:100vh;overflow:hidden}
+body.home-reference .home-background{object-position:center center;filter:saturate(1.08) contrast(1.04)}
+body.home-reference .home-shade{
+  background:linear-gradient(90deg,rgba(0,0,0,.94) 0%,rgba(0,0,0,.82) 18%,rgba(0,0,0,.48) 42%,rgba(0,0,0,.10) 72%,rgba(0,0,0,.08) 100%),
+             linear-gradient(0deg,rgba(0,0,0,.90),rgba(0,0,0,.12) 55%);
+}
+body.home-reference .home-content{
+  width:min(1580px,94%);min-height:100vh;padding-top:105px;padding-bottom:28px;align-items:flex-start;
+}
+body.home-reference .home-copy{width:1080px;max-width:100%;padding-top:4px}
+body.home-reference .home-logo{width:360px;height:auto;margin:0 0 8px 48px;filter:drop-shadow(0 12px 20px rgba(0,0,0,.8))}
+body.home-reference .home-kicker{margin:0 0 4px;color:#f2bb39;font-size:15px;font-weight:900;letter-spacing:2.1px}
+body.home-reference .home-title{margin:0 0 10px;font-size:clamp(60px,5.7vw,88px);line-height:.84;letter-spacing:-2.5px;font-weight:950}
+body.home-reference .home-title .white{color:#fff}
+body.home-reference .home-title span{color:#f2bb39}
+body.home-reference .home-title:after{content:"";display:block;width:125px;height:5px;margin:10px 0 0 275px;background:#f2bb39}
+body.home-reference .home-tagline{max-width:640px;margin:0;color:#f4f4f4;font-size:17px;line-height:1.35}
+body.home-reference .home-actions{margin-top:20px}
+body.home-reference .home-actions .btn{width:315px;height:58px;padding:0 20px;border-radius:15px;font-size:15px;box-shadow:0 8px 28px rgba(242,187,57,.28)}
+body.home-reference .home-features{width:1050px;max-width:100%;margin-top:25px;display:grid;grid-template-columns:repeat(5,1fr)}
+body.home-reference .home-feature{min-height:100px;padding:0 20px;border-right:1px solid rgba(242,187,57,.55);text-align:center;display:flex;flex-direction:column;align-items:center}
+body.home-reference .home-feature:first-child{padding-left:0}
+body.home-reference .home-feature:last-child{border-right:0}
+body.home-reference .home-feature .feature-icon{width:58px;height:58px;border:3px solid #f2bb39;border-radius:50%;display:grid;place-items:center;color:#f2bb39;background:rgba(0,0,0,.28);font-size:27px}
+body.home-reference .home-feature h3{margin:8px 0 2px;color:#fff;font-size:12px;white-space:nowrap}
+body.home-reference .home-feature p{margin:0;color:#ccc;font-size:11px;white-space:nowrap}
+@media(max-width:650px){
+ body.home-reference .home-page{height:auto;min-height:100vh}
+ body.home-reference .home-content{min-height:100vh;padding-top:92px}
+ body.home-reference .home-logo{width:235px;margin-left:0}
+ body.home-reference .home-kicker{font-size:10px;letter-spacing:1.2px}
+ body.home-reference .home-title{font-size:45px}
+ body.home-reference .home-title:after{margin-left:145px;width:80px}
+ body.home-reference .home-tagline{font-size:13px}
+ body.home-reference .home-features{width:100%;grid-template-columns:repeat(2,1fr);row-gap:12px}
+ body.home-reference .home-feature{padding:8px 5px;border-right:0}
+ body.home-reference .home-feature h3,body.home-reference .home-feature p{white-space:normal}
+}

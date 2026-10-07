@@ -1,0 +1,41 @@
+PASOS RAPIDOS PARA GITHUB
+
+1. Crea un repositorio en GitHub llamado:
+   luis-barber-shop
+
+2. En esta carpeta selecciona TODOS los archivos y carpetas:
+   index.html
+   cortes.html
+   galeria.html
+   reservar.html
+   pagos.html
+   contacto.html
+   css
+   js
+   img
+   README.md
+   .gitignore
+   .nojekyll
+
+3. Súbelos al repositorio.
+   IMPORTANTE: index.html debe quedar directamente en la raíz.
+
+4. En GitHub:
+   Settings -> Pages
+   Source: Deploy from a branch
+   Branch: main
+   Folder: / (root)
+   Save
+
+5. Espera unos minutos y abre la URL que GitHub Pages te mostrará.
+
+SI USAS GIT EN VS CODE:
+
+git init
+git add .
+git commit -m "LUIS BARBER SHOP - sitio web"
+git branch -M main
+git remote add origin https://github.com/TU-USUARIO/luis-barber-shop.git
+git push -u origin main
+
+Cambia TU-USUARIO por tu usuario de GitHub.
